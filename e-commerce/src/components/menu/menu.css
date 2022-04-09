@@ -1,0 +1,13 @@
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    font-size: 18pt;
+}
+
+.nav-menu a:hover {
+    color: #000;
+}

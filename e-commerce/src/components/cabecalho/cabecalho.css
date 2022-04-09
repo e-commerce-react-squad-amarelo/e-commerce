@@ -1,0 +1,17 @@
+.container-cabecalho {
+    width: 100vw;
+    background-color: antiquewhite;
+    /* justify-content: space-between; */
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

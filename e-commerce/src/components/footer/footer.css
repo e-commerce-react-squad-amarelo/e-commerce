@@ -5,3 +5,7 @@
     color: white;
     height: 50px;
 }
+
+.texto-footer h5{
+    margin-bottom: 0;
+}

@@ -10,6 +10,7 @@ import { BrowserRouter,
 
 import App from '../src/pages/App/App';
 import { Home } from './pages/Home';
+import Cadastrar from './pages/Cadastro';
 
 const root = createRoot(document.getElementById('root'))
 
@@ -19,6 +20,7 @@ root.render(
             
       <Route path="/" element={<Home />}/>
       <Route path="/app" element={<App />}/>
+      <Route path="/cadastro" element={<Cadastrar />}/>
 
     </Routes>
   </BrowserRouter>

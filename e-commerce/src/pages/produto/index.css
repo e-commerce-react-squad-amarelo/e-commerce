@@ -1,0 +1,19 @@
+.informacoesProduto img{
+    width: 100%;
+    height: auto;
+}
+.informacoesProduto .descricaoProduto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.informacoesProduto h1{
+    margin: 15px 0;
+}
+.informacoesProduto .listaCores{
+    align-items: center;
+}
+.informacoesProduto p{
+    margin: 0 5px 5px;
+}

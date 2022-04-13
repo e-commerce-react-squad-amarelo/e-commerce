@@ -6,6 +6,8 @@ import { FormularioCadastro } from "../formulariocadastro";
 
 import { BotaoComprar } from "../botoes/botaoComprar";
 
+import { Botao } from "../botoes/botaopadrao";
+
 export function MainCadastro () {
     return (
         <>
@@ -14,10 +16,11 @@ export function MainCadastro () {
                     <FormularioCadastro/>
                 </Row>
 
-                <Row>
+                <Row >
                     <Stack direction="horizontal" gap={5} className="d-flex justify-content-center">
-                        <BotaoComprar>Salvar</BotaoComprar>
-                        <BotaoComprar>Cancelar</BotaoComprar>
+                        <Botao texto="Salvar"/>
+                        <Botao texto="Cancelar"/>
+
                     </Stack>  
                 </Row>
             </Container>

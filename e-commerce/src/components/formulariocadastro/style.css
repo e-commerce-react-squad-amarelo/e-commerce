@@ -1,9 +1,19 @@
 .formulario {
-    width: 450px;
+    width: 80%;
     margin: 0 auto;
     margin-top: 30px;
 }
 
-Figure {
-    background-color: aqua;
+.imgcadastro {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.centralizada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

@@ -11,7 +11,7 @@ import { BrowserRouter,
 import App from '../src/pages/App/App';
 import { Home } from './pages/Home';
 import { Produto } from './pages/produto';
-import Cadastrar from './pages/Cadastro';
+import { Cadastrar } from './pages/Cadastro';
 
 const root = createRoot(document.getElementById('root'))
 

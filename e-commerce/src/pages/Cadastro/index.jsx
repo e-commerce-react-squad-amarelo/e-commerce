@@ -6,22 +6,12 @@ import { MainCadastro } from '../../components/main-cadastro';
 
 import './style.css';
 
-function Cadastrar() {
+export function Cadastrar() {
     return (
     <>
-      <Container className="container-pai">
-        <Row>
-          <Cabecalho />
-        </Row>
-        
         <Row className='main'>
           <MainCadastro />
         </Row>
-  
-        <Row>
-          <Footer />
-        </Row>
-      </Container>
     </>
     );
   }

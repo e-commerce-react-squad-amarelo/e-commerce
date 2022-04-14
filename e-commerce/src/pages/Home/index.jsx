@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom'
-import App from '../App/App'
+import {Main} from '../../components/main/main'
+
 
 
 const Home = () => {
     return <>
-        <App/>
+        <Main/>
     </>
-
   }
-
   export { Home }
   

@@ -11,9 +11,6 @@ import { BotaoComprar } from "../../components/botoes/botaoComprar";
 export function Produto() {
   return (
     <>
-      <Container>
-        <Cabecalho />
-
         <Row className="informacoesProduto">
           <h1>Camiseta Preta Básica - maculino</h1>
           <Col>
@@ -35,8 +32,6 @@ export function Produto() {
           </Col>
         </Row>
 
-        <Footer />
-      </Container>
     </>
   );
 }

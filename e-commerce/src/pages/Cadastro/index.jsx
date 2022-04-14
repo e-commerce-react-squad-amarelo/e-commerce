@@ -9,19 +9,9 @@ import './style.css';
 export function Cadastrar() {
     return (
     <>
-      <Container className="container-pai">
-        <Row>
-          <Cabecalho />
-        </Row>
-        
         <Row className='main'>
           <MainCadastro />
         </Row>
-  
-        <Row>
-          <Footer />
-        </Row>
-      </Container>
     </>
     );
   }

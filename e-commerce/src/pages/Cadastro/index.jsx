@@ -1,5 +1,5 @@
 import { Container, Row } from 'react-bootstrap';
-import { MainCadastro } from '../../components/main-cadastro';
+import { FormularioCadastro} from '../../components/formulariocadastro';
 
 import './style.css';
 
@@ -7,7 +7,7 @@ export function Cadastrar() {
     return (
     <>
         <Row className='main'>
-          <MainCadastro />
+          <FormularioCadastro />
         </Row>
     </>
     );

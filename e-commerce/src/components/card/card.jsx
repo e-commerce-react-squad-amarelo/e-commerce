@@ -11,7 +11,7 @@ export function Cards () {
     return (
     <>
     
-    <Card style={{ width: '18rem' }}>
+    {/* <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={cardInfos.caminhoImagem} />
         <Card.Body>
             <Card.Title>{cardInfos.tituloCard}</Card.Title>
@@ -19,6 +19,6 @@ export function Cards () {
                 </Card.Text>
             <Button variant="primary">Comprar</Button>
         </Card.Body>
-    </Card>    
+    </Card>     */}
     </>);
 }

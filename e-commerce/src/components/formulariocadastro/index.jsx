@@ -23,6 +23,9 @@ export function FormularioCadastro() {
   function salvar() {
     produtos.push({ titulo, preco, peso, descricao });
     setProdutos([...produtos]);
+
+    console.log(produtos)
+    console.log(produtos[0].titulo);
   }
 
   return (

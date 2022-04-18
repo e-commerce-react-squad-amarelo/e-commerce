@@ -10,10 +10,11 @@ export default function ProdutoProvedor({children}){
             {children}
         </ProdutoContexto.Provider>
     )
+
 }
 
 
-export const useProdutos = () =>{
+export const useProdutos = () => {
     const context = useContext(ProdutoContexto)
     const {produtos, setProdutos} = context
     return (

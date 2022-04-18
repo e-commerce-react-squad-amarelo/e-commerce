@@ -1,6 +1,7 @@
 import React from "react"
 import {Nav} from "react-bootstrap"
 import './menu.css';
+import { Link } from "react-router-dom";
 
 
 export function CabecalhoMenu () {
@@ -13,11 +14,11 @@ export function CabecalhoMenu () {
             className="nav-menu"
             >
             <Nav.Item>
-                <Nav.Link href="/home">Home</Nav.Link>
+                <Link className="link" to="/">Home</Link>
             </Nav.Item>
 
             <Nav.Item>
-                <Nav.Link href="link-1">Cadastro</Nav.Link>
+                <Link className="link" to="/cadastro">Cadastro</Link>
             </Nav.Item>
         </Nav>
     </>);

@@ -10,6 +10,7 @@ import { Produto } from "./pages/produto";
 import { Cadastrar } from "./pages/Cadastro";
 import { DefaultTemplate } from "./pages/_Templates";
 import ProdutoProvider from "./Contexto/Produto";
+import ProdutoProvedor from "./Contexto/Produto";
 
 const root = createRoot(document.getElementById("root"));
 

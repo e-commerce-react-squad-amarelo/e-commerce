@@ -4,6 +4,8 @@ import { Col, Container, Row, Stack } from "react-bootstrap";
 
 import { FormularioCadastro } from "../formulariocadastro";
 
+import { Main } from "../main/main";
+
 import { BotaoComprar } from "../botoes/botaoComprar";
 
 import { Botao } from "../botoes/botaopadrao";

@@ -5,19 +5,20 @@ import "./main.css";
 import { salvar } from "../formulariocadastro/index";
 import { useProdutos } from "../../Contexto/Produto/index";
 
+import imgbase from "../../Assets/imagemtelacadastro.png"
+
 export function Main() {
   // ================== substituir produto.infos ========================
   const [produtos, setProdutos] = useProdutos();
-
-  // Falta Mostrar os cards Na tela Home, Se a lógica estiver correta
-  const montarLista = (produtos) => {
+  console.log('produtos', produtos);  // Falta Mostrar os cards Na tela Home, Se a lógica estiver correta
+  const montarLista = (titulo, descricao) => {
     return (
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="../../Assets/imagemtelacadastro.png" />
+        <Card className="card" style={{ width: "18rem" }}>
+          <Card.Img variant="top" src={imgbase} />
           <Card.Body>
-            <Card.Title>{produtos.titulo}</Card.Title>
-            <Card.Text>{produtos.descricao}</Card.Text>
-            <Button variant="primary">Comprar</Button>
+            <Card.Title>{titulo}</Card.Title>
+            <Card.Text>{descricao}</Card.Text>
+            <Button variant="primary">Visualizar</Button>
           </Card.Body>
         </Card>
     );
@@ -25,12 +26,11 @@ export function Main() {
   return (
     <>
       <Container className="Main">
-        <Row className="linha-cards">
-          <Col>
-            {produtos.map((produto) =>
-              montarLista(produto.titulo, produto.descricao)
+        <Row className="linha-cards align-items-center">
+          {produtos.map(produto =>
+            montarLista(produto.titulo, produto.descricao)
             )}
-          </Col>
+          
         </Row>
       </Container>
     </>

@@ -15,7 +15,7 @@ import { Botao } from "../botoes/botaopadrao";
 export function FormularioCadastro() {
   const [titulo, setTitulo] = useState("");
   const [preco, setPreco] = useState(0);
-  const [peso, setPeso] = useState(0);
+  const [peso, setPeso] =  useState(0);
   const [descricao, setDescricao] = useState("");
   const [produtos, setProdutos] = useProdutos();
   //const [imagem, setImagem] = useState('');
@@ -23,6 +23,7 @@ export function FormularioCadastro() {
   useEffect(() => {
     console.log(produtos)
   },[produtos])
+
 
   function handleCadastrar(event) {
     event.preventDefault();
@@ -53,6 +54,7 @@ export function FormularioCadastro() {
             <InputGroup.Text>R$</InputGroup.Text>
             <FormControl
               value={preco}
+               type="number"
               aria-label="Valor em Reais (com duas casas decimais)"
               onChange={(event) => setPreco(event.target.value)}
             />

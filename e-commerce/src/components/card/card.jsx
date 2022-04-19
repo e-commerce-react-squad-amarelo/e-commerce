@@ -1,20 +1,25 @@
 import React from "react"
 import {Button, Card} from "react-bootstrap";
+import imgbase from "../../Assets/imagemtelacadastro.png" //teste da imagem no card
+
+const cardInfos = [{
+    caminhoImagem: "",
+    tituloCard: "",
+    descricaoCard: ""
+}]
 
 export function Cards () {
     return (
     <>
     
-    <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+    { <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={imgbase} />
         <Card.Body>
-            <Card.Title>Roupa alguma coisa</Card.Title>
-                <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+            <Card.Title>{cardInfos.tituloCard}</Card.Title>
+                <Card.Text>{cardInfos.descricaoCard}
                 </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary">Visualizar</Button>
         </Card.Body>
-    </Card>    
+    </Card>     }
     </>);
 }

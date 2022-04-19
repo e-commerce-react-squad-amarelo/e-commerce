@@ -2,12 +2,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
-.nav-menu a {
+.link {
     font-size: 18pt;
 }
 
-.nav-menu a:hover {
+.link:hover {
     color: #000;
+}
+
+.link {
+    margin: 20px; /*espaçamento*/
 }

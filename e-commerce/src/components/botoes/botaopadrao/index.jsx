@@ -8,9 +8,9 @@ import { Button } from "react-bootstrap";
 
 import ButtonBootstrap from 'react-bootstrap/Button';
 
-export const Botao = ({ texto, onClick }) => {
+export const Botao = ({ texto, onClick, type='button' }) => {
 
-  return <ButtonBootstrap onClick={onClick} className="my-3"
+  return <ButtonBootstrap onClick={onClick} className="my-3" type={type}
 //  style={{backgroundColor: 'green', color: '#fff'}}
 > {texto} </ButtonBootstrap>
 }

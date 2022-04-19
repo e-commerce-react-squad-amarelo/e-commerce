@@ -24,19 +24,17 @@ export function FormularioCadastro() {
     console.log(produtos)
   },[produtos])
 
+  function salvar() {
+    produtos.push({ titulo, preco, peso, descricao, id:produtos.length+1 });
+    setProdutos([...produtos]);
 
-  function handleCadastrar(event) {
-    event.preventDefault();
-    setProdutos([...produtos, { titulo, preco, peso, descricao }]);
-
-    setTitulo("");
-    setPreco(0);
-    setPeso(0);
-    setDescricao("")
+    console.log(produtos)
+    console.log(typeof(produtos[0].preco));
   }
 
+
   return (
-    <Form className="formulario" onSubmit={handleCadastrar}>
+    <Form className="formulario">
       <Row>
         <Col className="col-md-8">
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -101,7 +99,7 @@ export function FormularioCadastro() {
           gap={5}
           className="d-flex justify-content-center"
         >
-          <Botao type="submit" texto="Salvar" /*onClick={salvar}*/ />
+          <Botao texto="Salvar" onClick={salvar} />
           <Botao texto="Cancelar" />
         </Stack>
       </Row>

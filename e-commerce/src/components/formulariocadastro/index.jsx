@@ -31,6 +31,7 @@ export function FormularioCadastro() {
     setTitulo("");
     setPreco(0);
     setPeso(0);
+    setDescricao("")
   }
 
   return (
